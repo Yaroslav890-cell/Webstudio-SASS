@@ -1,0 +1,41 @@
+@import"/sass/base/reset";
+@import"/sass/base/colors";
+.header{
+  display: flex;
+ justify-content: space-between;
+ gap: 40px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ align-items: center;
+}
+.header-nav-link{
+  color: $text-logo-border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav-link:hover{
+  color: $hover-btn-color;
+}
+.header-nav-link{
+  color: $main-color;
+
+}
+.active::after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+border-radius: 2px;
+background: $hover-btn-color;
+margin-top: 28px;
+}
+.logo{
+  color: $main-color;
+}
+.nav{
+ display: flex;
+}
+.nav-list{
+  display: flex;
+  gap: 20px;
+}
