@@ -1,12 +1,13 @@
-@import"/sass/base/reset";
-@import"/sass/base/colors";
+@import"../base/reset";
+@import"../base/colors";
 .header{
-  display: flex;
- justify-content: space-between;
- gap: 40px;
- margin-top: 20px;
- margin-bottom: 20px;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    align-content: center;
+        padding-top: 40px;
 }
 .header-nav-link{
   color: $text-logo-border-color;
@@ -15,6 +16,21 @@
 }
 .header-nav-link:hover{
   color: $hover-btn-color;
+  display: block;
+    animation-name: shakeX;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes shakeX{
+ 0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
 }
 .header-nav-link{
   color: $main-color;
@@ -36,6 +52,34 @@ margin-top: 28px;
  display: flex;
 }
 .nav-list{
+  display: flex;
+  gap: 20px;
+}
+.phone-img{
+width: 10px;
+height: 16px;
+fill: #757575;
+}
+.envelope-img{
+width: 16px;
+height: 12px;
+fill: #757575;
+}
+.phone-item svg:hover{
+  fill: #2196F3;
+}
+.phone-item{
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phone-item:hover{
+  color: #2196F3;
+  fill: #2196F3;
+     animation-name: shakeX;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+.phone-list{
   display: flex;
   gap: 20px;
 }

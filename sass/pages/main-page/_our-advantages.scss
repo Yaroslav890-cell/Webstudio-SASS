@@ -1,0 +1,27 @@
+@import"../../base/reset";
+@import"../../base/colors";
+.our-advantages-list{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+      margin-bottom: 70px;
+}
+.our-advantages-title{
+  margin-bottom: 10px;
+}
+.our-advantages-item{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.our-advantages-img{
+ width: 70px;
+height: 70px;
+margin-left: 70px;
+margin-bottom: 15px
+}
+.our-advantages{
+  margin-top: 50px;
+  margin-bottom: 80px;
+} 

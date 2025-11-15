@@ -1,0 +1,63 @@
+@import"../../base/reset";
+@import"../../base/colors";
+.what-we-do-title{
+  margin-bottom: 30px;
+}
+.what-we-do{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 94px;
+}
+.what-we-do-gallery{
+display: flex;
+justify-content: center;
+gap: 30px;
+position: relative;
+}
+.image-text-1{
+position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    width: 370px;
+    height: 70px;
+    padding-top: 30px;
+}
+.image-text-2{
+  position: absolute;
+    bottom: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    width: 370px;
+    height: 70px;
+    padding-top: 30px;
+}
+.image-text-3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    width: 370px;
+    height: 70px;
+    padding-top: 30px;
+
+}

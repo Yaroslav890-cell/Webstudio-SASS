@@ -1,5 +1,12 @@
 @import"./base/reset";
-@import"./sass/base/typography";
-@import"./sass/base/colors";
-@import"./sass/layout/footer";
-@import"./sass/layout/header";
+@import"./base/typography";
+@import"./base/colors";
+@import"./layout/footer";
+@import"./layout/header";
+@import"./layout/modal";
+@import"./pages/main-page/clients";
+@import"./pages/main-page/main-menu";
+@import"./pages/main-page/our-advantages";
+@import"./pages/main-page/team";
+@import"./pages/main-page/what-we-do";
+@import"./pages/portfolio-page/work-menu";
