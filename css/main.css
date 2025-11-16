@@ -337,6 +337,31 @@ body {
   align-content: center;
   padding-top: 40px;
 }
+.header .nav-menu {
+  width: 40px;
+  height: 40px;
+}
+.header .mobile-header {
+  display: flex;
+  align-content: center;
+  gap: 276px;
+}
+.header .nav {
+  display: none;
+}
+.header .logo {
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header .nav {
+    display: flex;
+    gap: 50px;
+  }
+  .header .nav-menu {
+    width: 0px;
+    height: 0px;
+  }
+}
 
 .header-nav-link {
   color: #757575;

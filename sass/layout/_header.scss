@@ -1,13 +1,41 @@
 @import"../base/reset";
 @import"../base/colors";
 .header{
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 26px;
-    margin-bottom: 20px;
-    align-content: center;
-        padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  align-content: center;
+  padding-top: 40px;
+    .nav-menu{
+ width: 40px;
+ height: 40px;
+    }
+    .mobile-header{
+      display: flex;
+      align-content: center;
+      gap: 276px;
+    }
+  .nav{
+    display: none;
+ 
+  }
+  .logo{
+margin-left: 10px;
+}
+  
+  @media screen and (min-width:768px) {
+    .nav{
+      display: flex;
+      gap: 50px;
+    }
+    .nav-menu{
+   width: 0px;
+   height: 0px;
+    }
+  }
+  
 }
 .header-nav-link{
   color: $text-logo-border-color;
