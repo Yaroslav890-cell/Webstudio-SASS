@@ -344,7 +344,7 @@ body {
 .header .mobile-header {
   display: flex;
   align-content: center;
-  gap: 276px;
+  gap: 256px;
 }
 .header .nav {
   display: none;
