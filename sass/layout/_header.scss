@@ -14,16 +14,16 @@
     }
     .mobile-header{
       display: flex;
-      align-content: center;
-      gap: 256px;
+justify-content: space-between;
+width: 100vw;
+padding-left: 15px;
+padding-right: 15px;
+
     }
   .nav{
     display: none;
  
   }
-  .logo{
-margin-left: 10px;
-}
   
   @media screen and (min-width:768px) {
     .nav{
@@ -33,6 +33,9 @@ margin-left: 10px;
     .nav-menu{
    width: 0px;
    height: 0px;
+    }
+    .phone-list{
+      width: 353px;
     }
   }
   

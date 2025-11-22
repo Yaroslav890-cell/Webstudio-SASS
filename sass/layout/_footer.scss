@@ -54,7 +54,7 @@ background-color: $hover-btn-color;
   width: 24px;
 height: 24px;
 z-index: 1;
-fill: $icon-color;
+fill: $background-text-color;
 }
 .subscribe-btn{
   border-radius: 4px;
@@ -69,6 +69,8 @@ font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
 margin-left: 12px;
+align-items: center;
+    justify-content: center;
 }
 .subscribe-form{
   display: flex;
