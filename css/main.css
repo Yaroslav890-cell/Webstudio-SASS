@@ -332,7 +332,6 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
   margin-top: 26px;
   margin-bottom: 20px;
@@ -358,12 +357,36 @@ body {
     display: flex;
     gap: 50px;
   }
+  .header .logo {
+    margin-right: 140px;
+  }
   .header .nav-menu {
     width: 0px;
     height: 0px;
   }
   .header .phone-list {
     width: 353px;
+  }
+  .header .mobile-header {
+    display: none;
+  }
+  .header .phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header .mobile-header {
+    display: none;
+  }
+  .header .logo {
+    margin-right: 230px;
+  }
+  .header .phone-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 
