@@ -1,140 +1,149 @@
-@import"../base/reset";
-@import"../base/colors";
-.header{
+@import "../base/reset";
+@import "../base/colors";
+.header {
   display: flex;
-  gap: 40px;
-  margin-top: 26px;
+  justify-content: space-between;
+  // gap: 40px;
   margin-bottom: 20px;
   align-content: center;
   padding-top: 40px;
-    .nav-menu{
- width: 40px;
- height: 40px;
-    }
-    .mobile-header{
-      display: flex;
-justify-content: space-between;
-width: 100vw;
-padding-left: 15px;
-padding-right: 15px;
-
-    }
-  .nav{
-    display: none;
- 
+  .nav-menu {
+    width: 40px;
+    height: 40px;
   }
-  
-  @media screen and (min-width:768px) {
-    .nav{
+  // .mobile-header {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 100vw;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
+  .nav {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .nav {
       display: flex;
       gap: 50px;
     }
-    .logo{
+    .logo {
       margin-right: 140px;
     }
-    .nav-menu{
-   width: 0px;
-   height: 0px;
+    .nav-menu {
+      width: auto;
+      height: 0px;
     }
-    .phone-list{
-      width: 353px;
+    // .phone-list {
+    //   width: 353px;
+    // }
+    // .mobile-header {
+    //   display: none;
+    // }
+    .phone{
+      display: flex;
     }
-     .mobile-header{
-      display: none;
-     }
-     .phone-list{
+    .phone-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
-     }
+    }
   }
 
-  @media screen and (min-width:1024px){
-       .mobile-header{
+  @media screen and (min-width: 1200px) {
+    .mobile-header {
       display: none;
-     }
-       .logo{
-      margin-right: 230px;
     }
-       .phone-list{
+    .phone-list {
       display: flex;
       flex-direction: row;
       gap: 20px;
-     }
+    }
   }
-  
 }
-.header-nav-link{
+.header-nav-link {
   color: $text-logo-border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav-link:hover{
+.header-nav-link:hover {
   color: $hover-btn-color;
   display: block;
-    animation-name: shakeX;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+  animation-name: shakeX;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-@keyframes shakeX{
- 0%, 100% {
+@keyframes shakeX {
+  0%,
+  100% {
     transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translateX(-5px);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translateX(5px);
   }
 }
-.header-nav-link{
+.header-nav-link {
   color: $main-color;
-
 }
-.active::after{
+.active::after {
   content: "";
   display: block;
   height: 4px;
   width: 100%;
-border-radius: 2px;
-background: $hover-btn-color;
-margin-top: 28px;
+  border-radius: 2px;
+  background: $hover-btn-color;
+  margin-top: 28px;
 }
-.logo{
+.logo {
   color: $main-color;
 }
-.nav{
- display: flex;
+.nav {
+  display: flex;
 }
-.nav-list{
+.nav-list {
   display: flex;
   gap: 20px;
 }
-.phone-img{
-width: 10px;
-height: 16px;
-fill: #757575;
+.phone-img {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
 }
-.envelope-img{
-width: 16px;
-height: 12px;
-fill: #757575;
+.envelope-img {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
 }
-.phone-item svg:hover{
-  fill: #2196F3;
+.phone-item svg:hover {
+  fill: #2196f3;
 }
-.phone-item{
+.phone-item {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone-item:hover{
-  color: #2196F3;
-  fill: #2196F3;
-     animation-name: shakeX;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+.phone-item:hover {
+  color: #2196f3;
+  fill: #2196f3;
+  animation-name: shakeX;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-.phone-list{
+.phone-list {
   display: flex;
   gap: 20px;
 }
