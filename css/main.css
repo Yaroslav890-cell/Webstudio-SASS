@@ -818,6 +818,12 @@ body {
        column-gap: 135px;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    gap: 30px;
+  }
+}
 
 .clients-image {
   width: 106px;
@@ -1006,6 +1012,13 @@ body {
   gap: 40px;
   justify-content: center;
   margin-bottom: 70px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .our-advantages-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .our-advantages-title {
@@ -1017,6 +1030,13 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 94px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .our-advantages-item {
+    display: flex;
+    align-items: start;
+  }
 }
 
 .our-advantages-img {

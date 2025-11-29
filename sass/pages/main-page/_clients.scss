@@ -18,6 +18,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       row-gap: 30px;
     column-gap: 135px;
     flex-wrap: wrap;
+    @media screen and (min-width:1200px){
+      display: flex;
+      gap: 30px;
+    }
 }
 .clients-image{
   width:106px ;
