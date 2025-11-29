@@ -1,52 +1,61 @@
-@import"../../base/reset";
-@import"../../base/colors";
-.team{
-  padding-top:186px ;
+@import "../../base/reset";
+@import "../../base/colors";
+.team {
+  padding-top: 186px;
   padding-bottom: 84px;
   text-align: center;
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  @media screen and (min-width:768px){
+    .team-list{
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
-.team-h2{
+.team-h2 {
   margin-bottom: 50px;
 }
-.team-list{
-display: flex;
-gap: 30px;
+.team-item {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.team-item{
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-}
-.team-title{
- margin-top: 30px;
- margin-bottom: 10px;
+.team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-item svg {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.icon{
+.icon {
   width: 20px;
   height: 20px;
-  fill:#afb1b8;
+  fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-container{
+.svg-container {
   display: flex;
-gap: 10px;
+  gap: 10px;
   margin-top: 16px;
   margin-bottom: 30px;
   justify-content: center;
 }
 
-.svg-container-item{
-  width:44px ;
+.svg-container-item {
+  width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
 }
-.svg-container-item:hover{
-  background-color: #2196F3;
+.svg-container-item:hover {
+  background-color: #2196f3;
 }
-.icon:hover{
-      fill: #ffffff;
+.icon:hover {
+  fill: #ffffff;
 }
