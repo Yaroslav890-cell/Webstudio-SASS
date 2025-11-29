@@ -65,6 +65,8 @@ body {
 .container {
   min-width: 320px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -809,9 +811,12 @@ body {
 .clients-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
   margin-top: 50px;
   margin-bottom: 94px;
+  row-gap: 30px;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  flex-wrap: wrap;
 }
 
 .clients-image {
