@@ -1,7 +1,7 @@
 @import"../../base/reset";
 @import"../../base/colors";
 .main-menu{
-background-image: url(../img/menu-bg.jpg);
+background-image: url(../../../img/main-phone-bg.png);
 background-repeat: no-repeat;
 background-position: center;
 height: 600px;
@@ -9,13 +9,23 @@ margin-top: 20px;
 padding-top: 200px;
 padding-bottom: 280px 
 
+
+
 }
+  @media screen and (min-width:768px) {
+ .main-menu{
+  background-image: url(../img/menu-bg.jpg);
+ }
+  }
 .main-menu-title{
  font-size: 44px;
-width: 500px;
+width: 395px;
 text-align: center;
   color: #FFFFFF;
   line-height: 60px; /* 136.364% */
+  @media screen and (min-width:768px) {
+    width: 500px;
+  }
 
 }
 .menu-container{
