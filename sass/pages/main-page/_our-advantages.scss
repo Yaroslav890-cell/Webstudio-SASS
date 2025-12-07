@@ -9,8 +9,12 @@
       @media screen and (min-width:768px){
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
       }
 
+      @media screen and (min-width:1200px){
+        flex-wrap: nowrap;
+      }
 }
 .our-advantages-title{
   margin-bottom: 10px;
@@ -27,6 +31,9 @@ align-items: center;
   .our-advantages-img{
     margin-left: 70px;
   }
+  .our-advantages-text {
+    width: 300px;
+}
 }
 }
 .our-advantages-img{
