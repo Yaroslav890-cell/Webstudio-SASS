@@ -4,6 +4,8 @@
   background-color: $footer-bg-color;
   padding-top:60px ;
   padding-bottom:161px;
+      display: flex;
+    justify-content: center;
 }
 .footer-logo{
  color: $background-text-color;

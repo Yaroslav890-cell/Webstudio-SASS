@@ -14,7 +14,23 @@
     .team-list{
       display: flex;
       flex-direction: row;
+              flex-wrap: wrap;
     }
+    .team-img{
+      width: 354px;
+    height: 374px;
+
+    }
+
+  }
+  @media screen and (min-width:1200px){
+.team-img{
+  width: auto;
+  height: auto;
+  }
+  .team-list{
+    flex-wrap: nowrap;
+  }
   }
 }
 .team-h2 {

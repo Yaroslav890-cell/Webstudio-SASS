@@ -152,6 +152,8 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 161px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -827,7 +829,7 @@ body {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 94px;
-  row-gap: 30px;
+  row-gap: 125px;
   -moz-column-gap: 135px;
        column-gap: 135px;
   flex-wrap: wrap;
@@ -1166,6 +1168,20 @@ body {
   .team .team-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .team .team-img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team .team-img {
+    width: auto;
+    height: auto;
+  }
+  .team .team-list {
+    flex-wrap: nowrap;
   }
 }
 
